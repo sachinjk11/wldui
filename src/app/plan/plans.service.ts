@@ -3,6 +3,7 @@ import { Subject } from 'rxjs';
 import { isDevMode, Injectable, OnInit } from '@angular/core';
 import {Router, ActivatedRoute, Resolve, ActivatedRouteSnapshot} from '@angular/router';
 import { Http } from '@angular/http';
+import { Title } from '@angular/platform-browser';
 
 @Injectable()
 export class PlanService implements OnInit
@@ -13,7 +14,7 @@ export class PlanService implements OnInit
      planEdit = new Subject<number>();
  
      ngOnInit() {  }
-     constructor(private http: Http, private route : ActivatedRoute){ }
+     constructor(private titleService: Title){ }
 
  
  
@@ -24,8 +25,13 @@ export class PlanService implements OnInit
        
        getByIndex(index: number) {
         let plan = this.plans[index];
+        this.setTitle(plan.title);
         return plan;
        }
+
+       public setTitle( newTitle: string) {
+        this.titleService.setTitle( newTitle );
+      }
      
     //    add(plan: Plan) {
     //      this.plans.push(plan);

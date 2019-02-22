@@ -27,7 +27,7 @@ export class PostService
     
       getByIndex(index: number) {
         let post = this.posts[index];
-       // this.setTitle(post.title);
+        this.setTitle(post.title);
         return post;
       }
     

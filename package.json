@@ -19,7 +19,7 @@
     "@angular/http": "^7.2.4",
     "@angular/platform-browser": "~7.1.0",
     "@angular/platform-browser-dynamic": "~7.1.0",
-    "@angular/platform-server": "^7.2.4",
+    "@angular/platform-server": "^7.2.6",
     "@angular/router": "~7.1.0",
     "@nguniversal/module-map-ngfactory-loader": "^7.1.0",
     "bootstrap": "^3.4.0",
