@@ -12,8 +12,8 @@ export class DataStorageService {
               private planService : PlanService) {
   }
 
-  getposts() 
-  {
+ // getposts() 
+ // {
     // this.http.get('https://wld001.firebaseio.com/posts.json')
     //   .map(
     //         (response: Response) => {  const posts: Post[] = response.json();  return posts; }
@@ -21,13 +21,13 @@ export class DataStorageService {
     //   .subscribe(
     //                 (posts: Post[]) => {  this.postService.set(posts); }
     //   );
-  }
+ // }
 
 
 
 
-  getPlans()
-  {
+ // getPlans()
+  //{
     // console.log('---->***');
     // this.http.get('https://wld001.firebaseio.com/plans.json')
     // .toPromise()
@@ -38,5 +38,5 @@ export class DataStorageService {
     //   const plans : Plan[] = data.json();
     //   return plans;
     // }); 
- }
+ //}
 }

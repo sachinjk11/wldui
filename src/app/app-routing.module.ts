@@ -14,7 +14,6 @@ const appRoutes: Routes = [
   // { path: '', redirectTo: '/weight-loss-Tips', pathMatch: 'full' },
   { path: '', component: DashboardComponent },
   { path: 'weight-loss-diet-plans', component: PlanListComponent, 
-  resolve: {data : PlanService},
   children:
     [
       { path: ':id/:title', component: PlanDetailsComponent }

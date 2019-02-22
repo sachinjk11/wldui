@@ -53,8 +53,6 @@ export function planProviderFactory(provider: DataProvider) {
   imports:[
     BrowserModule.withServerTransition({appId: 'my-app'}),
     CommonModule,
-   // NgtUniversalModule,
-   // TransferHttpCacheModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,

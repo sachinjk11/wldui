@@ -25,8 +25,7 @@ export class PlanDetailsComponent implements OnInit {
     this.route.params .subscribe(
         (params: Params) => {
           this.id = +params['id'];
-          this.plan = this.planService.getByIndex(this.id);
-
+         this.plan = this.planService.getByIndex(this.id);
           this.subscription1 =  this.planService.planUpdated.subscribe(
             (plans : Plan[])=>{ 
               this.plan = plans[this.id]; 
@@ -43,7 +42,7 @@ export class PlanDetailsComponent implements OnInit {
 
   onDelete()
   {
-    this.planService.delete(this.id);
+   // this.planService.delete(this.id);
     this.planService.planSelected.next(false);
     this.router.navigate(['/weight-loss-Tips']);
   }

@@ -50,7 +50,7 @@ export class PostDetailsComponent implements OnInit {
 
   onDelete()
   {
-    this.postservice.delete(this.id);
+    //this.postservice.delete(this.id);
     this.postservice.postSelected.next(false);
     this.router.navigate(['/weight-loss-Tips']);
   }

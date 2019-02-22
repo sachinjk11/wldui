@@ -25,6 +25,7 @@ export class PlanListComponent implements OnInit {
      private dataStorageService : DataStorageService, private dataprovider : DataProvider) 
    { 
       this.plans = dataprovider.getPlans();
+      this.planService.set(this.plans);
    }
  
     ngOnInit() {
@@ -38,12 +39,12 @@ export class PlanListComponent implements OnInit {
           if (this.router.url.split("/").length > 3)
           {
             this.planService.planSelected.next(true);
-            console.log('---->'+this.planService.get());
+          //  console.log('---->'+this.planService.get());
             
           }
           else
           {
-               this.plans = this.planService.get();
+               //this.plans = this.planService.get();
               this.planService.planSelected.next(false);
           }
    }

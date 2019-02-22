@@ -37,8 +37,8 @@ export class HeaderComponent implements OnInit {
 
   onFetchData() {
  
-    this.dataStorageService.getposts();
-    this.dataStorageService.getPlans();
+   // this.dataStorageService.getposts();
+   // this.dataStorageService.getPlans();
   }
 
   onClickPlan()

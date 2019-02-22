@@ -30,12 +30,8 @@ export class DataProvider
                 .get('https://wld001.firebaseio.com/posts.json')
                 .map(res => res.json())
                 .subscribe(response => {
-                     const posts : Post[] = response;  
-                     this.posts = posts;
-                     console.log('loading --> '+posts);
-                    console.log('loading --> '+response);
-                    console.log('loading --> '+this.posts);
-                    console.log("post loading complete")
+                    this.posts = response;  
+                    console.log('posts --> '+this.posts);
                     resolve(true);
                 })
         })
@@ -49,9 +45,7 @@ export class DataProvider
                 .map(res => res.json())
                 .subscribe(response => {
                      this.plans = response;  
-                     console.log('loading --> '+response);
-                    console.log('loading --> '+this.plans);
-                    console.log("plans loading complete")
+                    console.log('plans --> '+this.plans);
                     resolve(true);
                 })
         })
