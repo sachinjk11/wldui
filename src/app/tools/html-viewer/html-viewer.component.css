@@ -1,0 +1,26 @@
+.row { padding-top: 70px; }
+
+
+.myTitle
+{
+   font-family: Publico,Georgia,serif;
+}   
+
+.myText
+{
+ font-family: Publico,Georgia,serif;
+ font-size: 1.6rem;
+}
+
+ /*.table
+{
+   table : table-hover; 
+}*/
+
+ul.circle {
+   list-style-type: circle;
+ }
+
+ li.circle {
+   list-style-type: circle;
+ }

@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+      <div>
+       <button class="btn btn-warning pull-right" *ngIf="planSelected"  (click)="onClickback()">Back</button>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-xs-12" *ngIf="planSelected; then ItemPlan; else ListPlan">
+      </div>
+    </div>
+</div>
+
+<ng-template #ListPlan>
+
+  <app-plan-item
+      *ngFor="let planElm of plans; let i = index"
+      [plan]="planElm"
+      [index]="i"></app-plan-item>
+
+</ng-template>
+
+<ng-template #ItemPlan>
+  <router-outlet></router-outlet>
+</ng-template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

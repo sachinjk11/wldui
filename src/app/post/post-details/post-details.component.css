@@ -1,0 +1,12 @@
+.myTitle
+{
+   font-family: Publico,Georgia,serif;
+}   
+
+.myText
+{
+ font-family: Publico,Georgia,serif;
+ font-size: 1.6rem;
+  /* Use this value to count block height */
+  line-height: 1.8em;
+}

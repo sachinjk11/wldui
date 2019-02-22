@@ -1,0 +1,75 @@
+ /* styles for '...' */ 
+ .block-with-text {
+    /* Over flow hidden hides the text if it is more than N lines  */
+    overflow: hidden;
+    /* To set '...' in absolute position */
+    position: relative; 
+    /* Use this value to count block height */
+    line-height: 1.8em;
+    /* Max-height = line-height (1.2) * lines max number (2) */
+    max-height: 10.8em; 
+    /* If the last visible word doesn't adjoin right side then this will fix the problem */
+    text-align: justify !important;  
+    /* place for '...' */
+    padding-right: 40px;
+    padding-left: 1em;
+    }
+
+    /* create the ... */
+    .block-with-text:before {
+    /* points in the end */
+    content: '...';
+    /* absolute position */
+    position: absolute;
+    /* set position to right bottom corner of block */
+    right: 20px;
+    bottom: 0;
+    }
+
+    /* hide ... if we have text, which is less than or equal to max lines */
+    .block-with-text:after {
+    /* points in the end */
+    content: '';
+    /* absolute position */
+    position: absolute;
+    /* set position to right bottom corner of text */
+    right: 20px;
+    /* set width and height */
+    width: 10em;
+    height: 10em;
+    margin-top: 0.2em;
+    /* bg color = bg color under block */
+    background: white;
+    }
+
+    
+
+   .myTitle
+   {
+      font-family: Publico,Georgia,serif;
+   }   
+
+   .myText
+   {
+    font-family: Publico,Georgia,serif;
+    font-size: 1.6rem;
+   }
+
+
+
+   .panel {
+      border: 1px solid #f4511e; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+    }
+    .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+    }
+
+
+    .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 1.1px;
+      border-bottom: 1.1px solid transparent;
+    }

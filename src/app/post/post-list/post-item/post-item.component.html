@@ -1,0 +1,31 @@
+<!-- <a
+  style="cursor: pointer;"
+  (click)="onClickPost()"
+  class="list-group-item clearfix">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading"><div [innerHTML]=" post.title "></div></h4>
+    <div [innerHTML]=" post.desc "></div>
+  </div>
+
+    <p class="list-group-item-text"> <div [innerHTML]=" post.desc "></div> {{ post.desc }}</p>
+    <span class="pull-right">
+        <img
+          [src]="recipe.imagePath"
+          alt="{{ recipe.name }}"
+          class="img-responsive"
+          style="max-height: 50px;">
+      </span> 
+</a> -->
+
+
+
+<div class="panel panel-info">
+    <div class="panel-heading"> 
+        <h3 class="list-group-item-heading" style="cursor: pointer;" (click)="onClickPost()">
+        <div class="myTitle" [innerHTML]=" post.title "></div></h3>
+    </div>
+    <div class="panel-body">  <div class="block-with-text myText" [innerHTML]=" post.desc "></div>
+      <!-- <p class='block-with-text'></p> -->
+      <button class="btn btn-success pull-right" (click)="onClickPost()">Read More...</button>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+
+<div class="col-sm-6">
+<div class="panel panel-info">
+  <div class="panel-heading"> 
+      <h3 class="list-group-item-heading" style="cursor: pointer;" (click)="onClickPost()">
+      <div class="myTitle" [innerHTML]=" plan.title "></div></h3>
+  </div>
+  <div class="panel-body">  
+      <span >
+          <img [src]="plan.imagePath"  alt="{{ plan.title }}" class="img-responsive" >
+        </span>
+    <div class="block-with-text myText" [innerHTML]=" plan.intro "></div>
+    <button class="btn btn-success pull-right" (click)="onClickPost()">Read More...</button>
+  </div>
+</div>
+</div>

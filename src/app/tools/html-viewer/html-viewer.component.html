@@ -1,0 +1,20 @@
+
+
+<!-- <div class="row">
+  <div class="column">
+    <input type="text" name="html" class="form-control" id="html" [(ngModel)]="html" >
+  </div>
+  <div class="column">
+    <div [innerHTML]="html">
+    </div>
+</div>
+</div> -->
+
+<div class="row">
+    <div class="col-md-5">
+        <textarea type="text" name="html" class="form-control" id="html" [(ngModel)]="html" rows="42"></textarea>
+    </div>
+    <div class="myText" class="col-md-7">
+        <div [innerHTML]="html">
+    </div>
+  </div>

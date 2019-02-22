@@ -1,0 +1,40 @@
+
+
+<div class="container">
+  <div class="row">
+    <div >
+      <button class="btn btn-warning pull-right" *ngIf="postSelected"  (click)="onClickback()">Back</button>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12" *ngIf="postSelected; then ItemPost; else ListPost">
+    </div>
+  </div>
+</div>
+
+<ng-template #ListPost>
+  <app-post-item
+      *ngFor="let postsElm of posts; let i = index"
+      [post]="postsElm"
+      [index]="i"></app-post-item>
+</ng-template>
+
+<ng-template #ItemPost>
+  <router-outlet></router-outlet>
+</ng-template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
