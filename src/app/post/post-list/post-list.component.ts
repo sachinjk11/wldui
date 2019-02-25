@@ -4,7 +4,7 @@ import { Post } from '../posts.model';
 import { Subscription } from 'rxjs';
 import { Router, ActivatedRoute } from '@angular/router';
 import { DataStorageService } from '../../shared/data-storage.service';
-import { DataProvider } from 'src/app/shared/dataProvider';
+import { DataProvider } from '../../shared/dataProvider';
 
 @Component({
   selector: 'app-post-list',

@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Router, ActivatedRoute } from '@angular/router';
-import { DataStorageService } from '../../shared/data-storage.service';
 import { Plan } from '../plan.model';
 import { PlanService } from '../plans.service';
-import { DataProvider } from 'src/app/shared/dataProvider';
+import { DataProvider } from '../../shared/dataProvider';
 
 
 
@@ -21,8 +20,7 @@ export class PlanListComponent implements OnInit {
   subscription2 : Subscription;
   planSelected : boolean;
 
-   constructor(private planService : PlanService, private router : Router, private route : ActivatedRoute,
-     private dataStorageService : DataStorageService, private dataprovider : DataProvider) 
+   constructor(private router : Router, private route : ActivatedRoute, private planService : PlanService, public dataprovider : DataProvider) 
    { 
       this.plans = dataprovider.getPlans();
       this.planService.set(this.plans);

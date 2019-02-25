@@ -58,12 +58,15 @@
             }
           }
         },
-        "server": {
-          "builder": "@angular-devkit/build-angular:server",
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "outputPath": "dist/wldui",
-            "main": "src/main.server.ts",
-            "tsConfig": "src/tsconfig.server.json"
+            "browserTarget": "wldui:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "wldui:build:production"
+            }
           }
         },
         "extract-i18n": {

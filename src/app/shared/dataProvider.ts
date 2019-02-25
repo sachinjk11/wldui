@@ -3,7 +3,6 @@ import { Plan } from '../plan/plan.model';
 import { Post } from '../post/posts.model';
 import { Http } from '@angular/http';
 
-
 @Injectable()
 export class DataProvider
 {

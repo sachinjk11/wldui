@@ -4,7 +4,7 @@ import { PostService } from '../posts.service';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { Title } from '@angular/platform-browser';
-import { DataProvider } from 'src/app/shared/dataProvider';
+import { DataProvider } from '../../shared/dataProvider';
 
 @Component({
   selector: 'app-post-details',
